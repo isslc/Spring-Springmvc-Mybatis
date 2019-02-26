@@ -33,6 +33,12 @@
       <version>2.5</version>
     </dependency>
 
+<!--rapid-->
+    <dependency>
+      <groupId>com.googlecode.rapid-framework</groupId>
+      <artifactId>rapid-core</artifactId>
+      <version>4.0.5</version>
+    </dependency>
 
     <!--<dependency>-->
     <!--<groupId>javax.servlet.jsp</groupId>-->

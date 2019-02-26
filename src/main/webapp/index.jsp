@@ -1,60 +1,16 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>陈思龙博客</title>
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+</head>
 <body>
-<h2>Hello World!</h2>
-<form>
-    username: <input type="text" name="username" id="in">
-    <br>
+<h2 style="text-align: center">博客首页</h2>
+<div style="text-align: center;color: red;font-size: 25px">欢迎来到我的博客</div>
+<div style="text-align: center"><a href="${pageContext.request.contextPath}/login.html">登陆</a></div>
 
-    <div id="message"></div>
-</form>
-<button id="button">测试1</button>
-
-<a href="${pageContext.request.contextPath}/jsp/hello.html">Test</a>
-<br>
-<a href="${pageContext.request.contextPath}/jsp/ceshi.html">Test2</a>
-<div id="div"></div>
-<p>111</p>
 </body>
-
-<script type="text/javascript" src="static/js/jquery.js"></script>
 </html>
-<script>
-    $(function () {
-        $(":input[name='username']").change(function () {
-            var val=$("#in").val();
-            val=$.trim(val);
-            if (val!=null){
-                var url="${pageContext.request.contextPath}/info?name="+val;
-                $.post(url,function (result) {
-                    $("#message").html(result);
-                })
-            }
-        })
-    });
-    function inittiain() {
-        $("#button").click(
-            function () {
-                $.ajax({
-                    url: "${pageContext.request.contextPath}/hello",
-                    type: 'get',
-                    async: true,
-                    cache: false,
-                    contentType: false,
-                    processData: false,
-                    success: function (result) {
-                        var json = JSON.parse(result);
-                        console.log(json)
-                        $("p").text(json.data.name)
-                        $("#div").html(json.data)
-                    },
-                    error: function (result) {
 
-                    }
-                });
-            }
-        );
-    };
-
-    inittiain();
-</script>

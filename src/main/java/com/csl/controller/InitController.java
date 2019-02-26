@@ -22,10 +22,19 @@ public class InitController {
         ModelAndView view = new ModelAndView(page.split(".html")[0]);
         return view;
     }
-    @RequestMapping(value = "jsp/*.html", produces = "text/html; charset=utf-8")
+    @RequestMapping(value = "/*.html", produces = "text/html; charset=utf-8")
     public ModelAndView getjsp(HttpServletRequest request) {
         String page=request.getRequestURI().split("/")[request.getRequestURI().split("/").length-1];
         ModelAndView view = new ModelAndView(page.split(".html")[0]);
         return view;
     }
+    @RequestMapping(value = "admin/*.html", produces = "text/html; charset=utf-8")
+    public ModelAndView getjsp1(HttpServletRequest request) {
+        System.out.println(request.getRequestURI());
+        String page=request.getRequestURI().split("/")[request.getRequestURI().split("/").length-1];
+        page="admin/"+page;
+        ModelAndView view = new ModelAndView(page.split(".html")[0]);
+        return view;
+    }
+
 }

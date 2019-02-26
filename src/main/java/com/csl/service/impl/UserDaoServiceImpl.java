@@ -22,4 +22,9 @@ public class UserDaoServiceImpl implements UserDaoService {
     public String info(String naem) {
         return userDao.info(naem);
     }
+
+    @Override
+    public User login(User user) {
+        return userDao.login(user);
+    }
 }

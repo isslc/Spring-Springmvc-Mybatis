@@ -8,4 +8,5 @@ import com.csl.entity.User;
 public interface UserDaoService {
     User select();
     String info(String naem);
+    User login(User user);
 }
