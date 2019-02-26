@@ -5,9 +5,9 @@
         <id column="id" property="id" jdbcType="INTEGER" />
         <result column="name" property="name" jdbcType="VARCHAR" />
         <result column="password" property="password" jdbcType="VARCHAR" />
-        <result column="password" property="mobile" jdbcType="VARCHAR" />
-        <result column="password" property="mail" jdbcType="VARCHAR" />
-        <result column="password" property="synopsis" jdbcType="VARCHAR" />
+        <result column="mobile" property="mobile" jdbcType="VARCHAR" />
+        <result column="mail" property="mail" jdbcType="VARCHAR" />
+        <result column="synopsis" property="synopsis" jdbcType="VARCHAR" />
     </resultMap>
     <select id="select" resultType="com.csl.entity.User" parameterType="java.lang.Integer">
         SELECT * FROM s_user

@@ -30,7 +30,6 @@ public class InitController {
     }
     @RequestMapping(value = "admin/*.html", produces = "text/html; charset=utf-8")
     public ModelAndView getjsp1(HttpServletRequest request) {
-        System.out.println(request.getRequestURI());
         String page=request.getRequestURI().split("/")[request.getRequestURI().split("/").length-1];
         page="admin/"+page;
         ModelAndView view = new ModelAndView(page.split(".html")[0]);

@@ -23,9 +23,7 @@ public class loginController {
     public String login(User user, HttpServletRequest request, HttpServletResponse response)throws Exception{
         request.setCharacterEncoding("utf-8");
         JSONObject result=new JSONObject();
-        System.out.println(user);
         User resultUser=userDaoService.login(user);
-        System.out.println(resultUser);
         if (resultUser!=null){
             HttpSession session=request.getSession();
             session.setAttribute("currentUser", resultUser);
