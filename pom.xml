@@ -176,6 +176,21 @@
       <artifactId>jquery</artifactId>
       <version>3.3.1</version>
     </dependency>
+
+
+
+    <!--运行时进不来，暂时手动添加jar包-->
+    <dependency>
+      <groupId>com.github.pagehelper</groupId>
+      <artifactId>pagehelper</artifactId>
+      <version>4.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+      <version>1.2.47</version>
+    </dependency>
+
   </dependencies>
 
 
@@ -213,6 +228,7 @@
           <version>2.8.2</version>
         </plugin>
       </plugins>
+      
     </pluginManagement>
 
     <resources>

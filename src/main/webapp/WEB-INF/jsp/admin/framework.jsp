@@ -17,6 +17,7 @@
     <meta charset="utf-8">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <link rel="stylesheet" href="${pageContext.request.contextPath}/static/plugin/layui/css/layui.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/back.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/static/plugin/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
@@ -60,7 +61,7 @@
                 <li class="layui-nav-item layui-nav-itemed">
                     <a class="" href="javascript:;">文章</a>
                     <dl class="layui-nav-child">
-                        <dd><a href="/admin/article">全部文章</a></dd>
+                        <dd><a href="${pageContext.request.contextPath}/admin/article.html">全部文章</a></dd>
                         <dd><a href="/admin/article/insert">写文章</a></dd>
                         <dd><a href="/admin/category">全部分类</a></dd>
                         <dd><a href="/admin/tag">全部标签</a></dd>

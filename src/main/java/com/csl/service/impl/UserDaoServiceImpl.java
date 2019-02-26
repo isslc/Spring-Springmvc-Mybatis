@@ -1,6 +1,6 @@
 package com.csl.service.impl;
 
-import com.csl.dao.userMapperDao;
+import com.csl.dao.UserMapper;
 import com.csl.entity.User;
 import com.csl.service.UserDaoService;
 import org.springframework.stereotype.Service;
@@ -12,7 +12,7 @@ import javax.annotation.Resource;
 @Service
 public class UserDaoServiceImpl implements UserDaoService {
     @Resource
-    userMapperDao userDao;
+    UserMapper userDao;
     @Override
     public User select() {
         return userDao.select();

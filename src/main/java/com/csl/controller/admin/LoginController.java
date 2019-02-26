@@ -16,7 +16,7 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/user")
-public class loginController {
+public class LoginController {
     @Resource
     UserDaoService userDaoService;
     @RequestMapping(value = "/login",method = RequestMethod.POST)

@@ -1,6 +1,7 @@
 package com.csl.entity;
 
 /**
+ * 用户表
  * @author a
  */
 public class User {
