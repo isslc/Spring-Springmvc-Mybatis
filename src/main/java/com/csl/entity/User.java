@@ -6,7 +6,7 @@ package com.csl.entity;
  */
 public class User {
     public int id;
-    public String name;
+    public String username;
     public String password;
     public String mobile;
     public String mail;
@@ -21,11 +21,11 @@ public class User {
     }
 
     public String getName() {
-        return name;
+        return username;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.username = name;
     }
 
     public String getPassword() {
@@ -64,7 +64,7 @@ public class User {
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
+                ", name='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", mobile='" + mobile + '\'' +
                 ", mail='" + mail + '\'' +
